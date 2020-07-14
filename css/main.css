@@ -53,12 +53,18 @@ body {
     color: #9D2929;
     transition: all 0.2s ease-in-out;
 }
+.header__nav-link:focus {
+    outline: none;
+}
 .social__link {
     margin-right: 24px;
     text-decoration: none;
 }
 .social__link:last-child {
     margin-right: 0;
+}
+.social__link:focus {
+    outline: none;
 }
 /* .................END HEADER........................... */
 .main__content {
@@ -138,6 +144,9 @@ margin-bottom: 85px;
 }
 .button:active {
     color: #fff;
+}
+.button:focus {
+    outline: none;
 }
 .button__play {
     display: flex;
@@ -316,6 +325,8 @@ display: none;
         width: 30px;
         height: 2px;
         background-color: #fff;
+        z-index: 2;
+        cursor: pointer;
 
     }
     .menu-button::before {
